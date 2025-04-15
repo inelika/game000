@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HELLS RUN</title>
+  <link rel="stylesheet" href="demon.css">
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="200"></canvas>
+    <div id="scoreboard">Счёт: 0</div>
+    <div id="highscore">Рекорд: 0</div>
+    <div id="levelDisplay">Уровень: Средний</div>
+    <div id="gameOverMessage"></div>
+    <div id="controls">
+      <button id="startBtn">Start</button>
+      <button id="restartBtn" style="display: none;">Начать заново</button>
+    </div>
+    <div id="difficulty-container">
+        <label for="difficulty">Сложность:</label>
+        <select id="difficulty">
+          <option value="easy">Легко</option>
+          <option value="medium" selected>Средне</option>
+          <option value="hard">Ад</option>
+          <option value="hell">Супер Ад</option>
+        </select>
+    </div>
+    <script src="enemy.js"></script>
+    <script src="demon.js"></script>
+    <script src="charact.js"></script>
+</body>
+</html>

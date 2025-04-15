@@ -1,0 +1,95 @@
+•⁠  ⁠{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("https://sotni.ru/wp-content/uploads/2023/08/multiashnyi-ad-3.webp");
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #1a1a1a7d;
+    overflow: hidden;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+canvas {
+    background: #000000;
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 20px #ff000044;
+}
+#controls {
+    margin-top: 20px;
+}
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff3333;
+    color: white;
+    transition: all 0.3s;
+}
+button:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+#scoreboard {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 0 0 5px black;
+}
+#highscore {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 0 0 5px black;
+}
+#levelDisplay {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    color: white;
+    font-size: 16px;
+    text-shadow: 0 0 5px black;
+}
+#gameOverMessage {
+    position: absolute;
+    top: 40%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    font-size: 24px;
+    z-index: 100;
+}
+#difficulty-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: monospace;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+#difficulty {
+    padding: 5px;
+    border-radius: 3px;
+    background: #333;
+    color: white;
+    border: 1px solid #ff3333;
+}
+
